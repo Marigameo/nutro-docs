@@ -1,0 +1,195 @@
+---
+title: Clubhouse Inspirations
+description: Clubhouse inspired UI components for pick & use in your awesome applications
+---
+
+Clubhouse inspired UI components for pick & use in your awesome applications
+
+_**Note**_: Before using any of these components(html) please download & include this CSS file in your html project
+
+Download from [here](https://github.com/Marigameo/nutro-components-docs/blob/main/src/docs/components/style.css) (or) use the
+[CDN link](https://cdn.jsdelivr.net/gh/Marigameo/nutro-components-docs@main/src/docs/components/style.css)
+
+## How to add this CSS?
+
+```html title=as-cdn
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/Marigameo/nutro-components-docs@main/src/docs/components/style.css"
+/>
+```
+
+```html title=download-and-added-as-file
+<link rel="stylesheet" href="style.css" />
+```
+
+## Short post card
+
+These awesome short post card can be used as testimonials/posts about a product or particular service, etc
+
+import "./style.css";
+
+<section style="margin: 2rem 0">
+  <div class="cl-card card-short text-center">
+    <h3 class="card-title">YNK Gamehouse</h3>
+    <p class="cl-card-content">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi soluta qui
+      quaerat deserunt dolorum odio, voluptate reiciendis esse reprehenderit
+      mollitia temporibus quidem, sint amet officiis molestiae dolores expedita
+      sed quae?
+    </p>
+    <div class="cl-card-footer">
+      <div>👋</div>
+      <div>Clubhouse</div>
+    </div>
+  </div>
+</section>
+
+## Horizontal post card
+
+Responsive horizontal card that scales as per content & screen sizes
+
+<section style="margin: 2rem 0">
+  <div class="cl-card card-horizontal text-center">
+    <h3 class="card-title">YNK Gamehouse</h3>
+    <p class="cl-card-content">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi soluta qui
+      quaerat deserunt dolorum odio, voluptate reiciendis esse reprehenderit
+      mollitia temporibus quidem, sint amet officiis molestiae dolores expedita
+      sed quae?
+    </p>
+    <div class="cl-card-footer">
+      <div>👋</div>
+      <div>Clubhouse</div>
+    </div>
+  </div>
+</section>
+
+### HTML version
+
+_Note_: Please ensure you've included the CSS in your HTML file
+
+Primary class to be included `card-short`
+
+```html title=src/post-card.html
+<div class="cl-card card-short text-center">
+  <h3 class="card-title">YNK Gamehouse</h3>
+  <p class="cl-card-content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi soluta qui
+    quaerat deserunt dolorum odio, voluptate reiciendis esse reprehenderit
+    mollitia temporibus quidem, sint amet officiis molestiae dolores expedita
+    sed quae?
+  </p>
+  <div class="cl-card-footer">
+    <div>👋</div>
+    <div>Clubhouse</div>
+  </div>
+</div>
+```
+
+For horizontal long card,
+Primary class to be included `card-horizontal`
+
+### React version
+
+| Prop    | Value             | Default |
+| ------- | ----------------- | ------- |
+| variant | short, horizontal | short   |
+
+```jsx
+import ClubhouseCard from "./components/Clubhouse/ClubhouseCard";
+
+<ClubhouseCard variant="short">
+  <h3 className="card-title">YNK Gamehouse</h3>
+  <p className="cl-card-content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi soluta qui
+    quaerat deserunt dolorum odio, voluptate reiciendis esse reprehenderit
+    mollitia temporibus quidem, sint amet officiis molestiae dolores expedita
+    sed quae?
+  </p>
+  <div className="cl-card-footer">
+    <div>👋</div>
+    <div>Clubhouse</div>
+  </div>
+</ClubhouseCard>;
+```
+
+## Avatars
+
+Simple intuitive avatar components of all primary sizes
+
+Sizes - `sm` `md` `lg`
+
+<section style="display: flex; margin: 2rem 0">
+  <div class="cl-avatar avatar-sm" style="margin-right: 1.6rem"></div>
+  <div class="cl-avatar avatar-md" style="margin-right: 1.6rem"></div>
+  <div class="cl-avatar avatar-lg" style="margin-right: 1.6rem"></div>
+  <div class="avatar-active">
+    <div class="cl-avatar avatar-lg"></div>
+  </div>
+</section>
+
+### HTML version
+
+```html title=src/post-card.html
+<div class="cl-avatar avatar-sm"></div>
+<div class="cl-avatar avatar-md"></div>
+<div class="cl-avatar avatar-lg"></div>
+<div class="avatar-active">
+  <div class="cl-avatar avatar-lg"></div>
+</div>
+```
+
+### React version
+
+| Prop     | Value       | Default |
+| -------- | ----------- | ------- |
+| size     | sm, md, lg  | md      |
+| isActive | true, false | false   |
+
+```jsx
+<Avatar size="sm"/>
+<Avatar size="md"/>
+<Avatar size="lg"/>
+<Avatar size="lg" isActive={true}/>
+```
+
+## Buttons
+
+Clubhouse styled buttons
+
+Variations - `primary` `secondary` `outline`
+
+<section style="display: flex; margin: 2rem 0">
+  <button class="btn btn-rounded btn-primary" style="margin-right: 1rem">
+    + Start a room
+  </button>
+  <button class="btn btn-rounded btn-secondary" style="margin-right: 1rem">
+    <span class="btn-icon">✌️</span>Leave quitely
+  </button>
+  <button class="btn btn-outline">Follow</button>
+</section>
+
+### HTML version
+
+```html title=src/post-card.html
+<button class="btn btn-rounded btn-primary">+ Start a room</button>
+<button class="btn btn-rounded btn-secondary">
+  <span class="btn-icon">✌️</span>Leave quitely
+</button>
+<button class="btn btn-outline">Follow</button>
+```
+
+### React version
+
+| Prop | Value                       | Default |
+| ---- | --------------------------- | ------- |
+| type | primary, secondary, outline | outline |
+
+```jsx
+<Button type="primary">+ Start a room</Button>
+<Button type="secondary">
+  <span class="btn-icon">✌️</span>Leave quitely
+</Button>
+<Button type="outline">Follow</Button>
+```

@@ -1,0 +1,18 @@
+# Sidebar navigation
+
+- label: 'Introduction'
+  link: '/'
+- label: 'Getting started'
+  link: '/getting-started'
+- label: Usage
+  items:
+    - label: 'Clubhouse Inspirations'
+      link: '/components/clubhouse'
+    - label: 'Creating docs'
+      link: '/usage/creating-docs'
+- label: More
+  items:
+    - label: FAQ
+      link: /faq
+    - label: 'Github'
+      link: https://github.com/ACGCET/nutro-components-react
