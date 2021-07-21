@@ -97,7 +97,7 @@ Primary class to be included `card-horizontal`
 | variant | short, horizontal | short   |
 
 ```jsx
-import ClubhouseCard from "./components/Clubhouse/ClubhouseCard";
+import { ClubhouseCard } from "nutro-components";
 
 <ClubhouseCard variant="short">
   <h3 className="card-title">YNK Gamehouse</h3>
@@ -148,6 +148,8 @@ Sizes - `sm` `md` `lg`
 | isActive | true, false | false   |
 
 ```jsx
+import { Avatar } from 'nutro-components'
+
 <Avatar size="sm"/>
 <Avatar size="md"/>
 <Avatar size="lg"/>
@@ -187,6 +189,8 @@ Variations - `primary` `secondary` `outline`
 | type | primary, secondary, outline | outline |
 
 ```jsx
+import { Button } from 'nutro-components'
+
 <Button type="primary">+ Start a room</Button>
 <Button type="secondary">
   <span class="btn-icon">✌️</span>Leave quitely
