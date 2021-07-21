@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Rocket Docs`,
-    defaultTitle: `Rocket Docs`,
-    siteTitleShort: `Rocket Docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
+    siteTitle: `Nutro Docs`,
+    defaultTitle: `Nutro Docs`,
+    siteTitleShort: `Nutro Docs`,
+    siteDescription: `Simple documentation demonstrating the usage of nutro-components - simple UI components build based on popular apps & inspirations`,
     siteUrl: `https://rocketdocs.netlify.app`,
-    siteAuthor: `@rocketseat`,
+    siteAuthor: `@Marigameo`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
     themeColor: `#8257E6`,
