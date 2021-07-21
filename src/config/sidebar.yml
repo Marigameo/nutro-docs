@@ -8,8 +8,6 @@
   items:
     - label: 'Clubhouse Inspirations'
       link: '/components/clubhouse'
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
 - label: More
   items:
     - label: FAQ
