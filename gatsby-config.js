@@ -4,7 +4,7 @@ module.exports = {
     defaultTitle: `Nutro Docs`,
     siteTitleShort: `Nutro Docs`,
     siteDescription: `Simple documentation demonstrating the usage of nutro-components - simple UI components build based on popular apps & inspirations`,
-    siteUrl: `https://rocketdocs.netlify.app`,
+    siteUrl: `https://nutro.netlify.app`,
     siteAuthor: `@Marigameo`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
@@ -18,8 +18,8 @@ module.exports = {
       options: {
         configPath: `src/config`,
         docsPath: `src/docs`,
-        repositoryUrl: `https://github.com/rocketseat/gatsby-themes`,
-        baseDir: `examples/gatsby-theme-docs`,
+        repositoryUrl: `https://github.com/Marigameo/nutro-docs`,
+        githubUrl: `https://github.com/Marigameo/nutro-docs`,
       },
     },
     {
@@ -44,7 +44,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://rocketdocs.netlify.app`,
+        siteUrl: `https://nutro.netlify.app`,
       },
     },
     `gatsby-plugin-offline`,

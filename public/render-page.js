@@ -15015,8 +15015,8 @@ var plugins = [{
     "plugins": [],
     "configPath": "src/config",
     "docsPath": "src/docs",
-    "repositoryUrl": "https://github.com/rocketseat/gatsby-themes",
-    "baseDir": "examples/gatsby-theme-docs"
+    "repositoryUrl": "https://github.com/Marigameo/nutro-docs",
+    "githubUrl": "https://github.com/Marigameo/nutro-docs"
   }
 }, {
   name: 'gatsby-plugin-manifest',
@@ -15049,7 +15049,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-canonical-urls/gatsby-ssr */ "./node_modules/gatsby-plugin-canonical-urls/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "siteUrl": "https://rocketdocs.netlify.app"
+    "siteUrl": "https://nutro.netlify.app"
   }
 }, {
   name: 'gatsby-plugin-offline',
