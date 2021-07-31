@@ -8,6 +8,10 @@
   items:
     - label: 'Clubhouse Inspirations'
       link: '/components/clubhouse'
+    - label: 'Gradient Components'
+      link: '/components/gradients'
+    - label: 'Glassmorphism Components'
+      link: '/components/glassmorphism'
 - label: More
   items:
     - label: FAQ

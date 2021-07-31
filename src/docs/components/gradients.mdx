@@ -1,0 +1,51 @@
+---
+title: Gardient Components
+description: Awesome gradient components to add gradient flavour to your websites
+---
+
+Simple & intuitive gradient components that can be used in your websites
+
+_**Note**_:
+
+- All the below are `react` components
+
+- In your react projects, install the dependancies using npm (or) yarn
+
+In case of npm
+
+```curl
+npm i nutro-components
+```
+
+In case of yarn
+
+```curl
+yarn add nutro-components
+```
+
+## Gardient buttons
+
+Some awesome gradient buttons of different flavours that you can plug & play in your apps
+
+<img src="./gradientButtons.png" alt="gradient buttons" />
+
+import "./style.css";
+
+### React version
+
+| Prop    | Value                       | Default |
+| ------- | --------------------------- | ------- |
+| type    | mango, lavendar, greenApple | -       |
+| onClick | click action logic          | -       |
+| size    | normal, large, small        | normal  |
+
+```jsx
+import { GradientButton } from "nutro-components";
+
+<GradientButton type="mango" size="normal">Mango shade</GradientButton>
+<GradientButton type="lavendar" size="small">Lavendar shade</GradientButton>
+<GradientButton type="greenApple"
+  size="large"
+  onClick= {() => alert('I just got cliked')}
+>Green apple shade</GradientButton>
+```
