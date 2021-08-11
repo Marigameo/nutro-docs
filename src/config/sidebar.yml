@@ -6,6 +6,8 @@
   link: '/getting-started'
 - label: Usage
   items:
+    - label: 'Ecommerce Components'
+      link: '/components/ecommerce'
     - label: 'FAQ components'
       link: '/components/faq'
     - label: 'Educative.io Inspirations'
