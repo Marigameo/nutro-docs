@@ -156,3 +156,49 @@ const slideimages = [ShoeOne, ShoeTwo, ShoeThree, ShoeFour, ShoeFive]
         preview = {true}/>
      </div>
 ```
+
+## Product Card
+
+Product information card with pricing details & quantity button
+
+<img src="./images/ecommerce/card-default.png" alt="card" />
+<img src="./images/ecommerce/card-veg.png" alt="card-veg" />
+<img src="./images/ecommerce/card-nv.png" alt="card-nv" />
+
+import "./style.css";
+
+### React version
+
+_Note:_ The image enlarges with slight transition when hovered
+
+Demo product object
+
+```js
+const product = {
+  image: BurgerImage,
+  name: "Butter Paneer Kulcha Burger",
+  isVeg: false,
+  description: "557 Cal | High protein",
+  actualPrice: "₹ 209",
+  discountedPrice: "₹ 104",
+};
+```
+
+```jsx
+import { ProductCard } from "nutro-components";
+
+// replace the path with your image folder paths
+import BurgerImage from './lib/components/Ecommerce/images/burger.jpeg'
+
+const product = {
+  image: BurgerImage,
+  name: 'Butter Paneer Kulcha Burger',
+  isVeg: false,
+  description: '557 Cal | High protein',
+  actualPrice: '₹ 209',
+  discountedPrice: '₹ 104'
+}
+
+<ProductCard product={product} />
+
+```
